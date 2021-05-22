@@ -44,6 +44,38 @@ npm install
 {
   "bitcoreNode": {
     "chains": {
+      "BTE": {
+        "mainnet": {
+          "chainSource": "p2p",
+          "trustedPeers": [
+            {
+              "host": "127.0.0.1",
+              "port": 1604
+            }
+          ],
+          "rpc": {
+            "host": "127.0.0.1",
+            "port": 1605,
+            "username": "username",
+            "password": "password"
+          }
+        },
+        "regtest": {
+          "chainSource": "p2p",
+          "trustedPeers": [
+            {
+              "host": "127.0.0.1",
+              "port": 20020
+            }
+          ],
+          "rpc": {
+            "host": "127.0.0.1",
+            "port": 20021,
+            "username": "username",
+            "password": "password"
+          }
+        }
+      },
       "BTC": {
         "mainnet": {
           "chainSource": "p2p",
@@ -135,8 +167,8 @@ upnp=1
 # if using Bitcoin Core v0.17+ prefix
 # [main]
 
-port=20008
-rpcport=20009
+port=1604
+rpcport=1605
 rpcallowip=127.0.0.1
 
 rpcuser=username

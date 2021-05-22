@@ -73,6 +73,14 @@ module.exports = {
         url: 'https://api.bitcore.io'
       }
     },
+    bte: {
+      livenet: {
+        url: 'https://api.bitcore.io'
+      },
+      testnet: {
+        url: 'https://api.bitcore.io'
+      }
+    },
     socketApiKey: 'socketApiKey'
   },
   pushNotificationsOpts: {

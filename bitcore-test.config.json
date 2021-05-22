@@ -9,6 +9,24 @@
       }
     },
     "chains": {
+      "BTE": {
+        "regtest": {
+          "chainSource": "p2p",
+          "trustedPeers": [
+            {
+              "host": "bitweb",
+              "port": 1604
+            }
+          ],
+          "rpc": {
+            "host": "bitweb",
+            "port": 1605,
+            "username": "bitwebnodetest",
+            "password": "local321"
+          }
+        }
+      },
+    "chains": {
       "BTC": {
         "regtest": {
           "chainSource": "p2p",
